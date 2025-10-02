@@ -1,5 +1,4 @@
-// swift-tools-version: 6.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version: 5.9
 
 import PackageDescription
 
@@ -14,14 +13,15 @@ let package = Package(
     dependencies: [
         // Kingfisher SDK
         .package(
-            url: "https://github.com/onevcat/Kingfisher.git", .upToNextMajor(from: "7.0.0")
+            url: "https://github.com/onevcat/Kingfisher.git",
+            .upToNextMajor(from: "7.0.0")
         )
     ],
     targets: [
         .binaryTarget(
             name: "NStationOfferwallBinary",
-            url: "https://github.com/Nasmedia-Tech/iOS-NStationDownload/raw/main/NStationOfferwall1.8.1.xcframework.zip",
-            checksum: "c67d77aca1d9d3ead562c04c0d375dc34abccc9b1e0b1f77c985c8c586702bb3"
+            url: "https://github.com/Nasmedia-Tech/iOS-NStationDownload/raw/main/NStationOfferwall1.8.2.xcframework.zip",
+            checksum: "f97190ef62bf9749ccec8203480a88352f69fd1b8ebc509a33276fb96744d597"
         ),
         .target(
             name: "iOS_RWD_SPM",
