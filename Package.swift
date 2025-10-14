@@ -27,7 +27,7 @@ let package = Package(
             name: "iOS_RWD_SPM",
             dependencies: [
                 "NStationOfferwallBinary",
-                .product(name: "Kingfisher", package: "Kingfisher")
+                .product(name: "Kingfisher", package: "kingfisher")
             ],
             path: "Sources/iOS-RWD-SPM"
         )
