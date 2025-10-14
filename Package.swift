@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "NStationOfferwall",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "NStationOfferwall",
@@ -14,7 +14,7 @@ let package = Package(
         // Kingfisher SDK
         .package(
             url: "https://github.com/onevcat/Kingfisher.git",
-            .upToNextMajor(from: "8.0.0")
+            .upToNextMajor(from: "7.0.0")
         )
     ],
     targets: [
