@@ -4,14 +4,14 @@ import PackageDescription
 
 let package = Package(
     name: "NStationOfferwall",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "NStationOfferwall",
             targets: ["iOS_RWD_SPM"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/onevcat/Kingfisher", from: "7.0.0")
+        .package(url: "https://github.com/onevcat/Kingfisher", from: "8.0.0")
     ],
     targets: [
         .binaryTarget(
