@@ -17,7 +17,7 @@ let package = Package(
         .binaryTarget(
             name: "NStationOfferwallBinary",
             url: "https://github.com/Nasmedia-Tech/iOS-NStationDownload/releases/download/v1.9.14/NStationOfferwall1.9.14.xcframework.zip",
-            checksum: "5f2c64b0e4dc01a97fcd78bda0a1fc3ed2965428139be87a6615daf71d6a0515"
+            checksum: "e32eaa7bd3ea6a0a6619c151224ca4edc6f68292aa43d16800f8c9ea9ddf4cdd"
         ),
         .target(
             name: "iOS_RWD_SPM",
