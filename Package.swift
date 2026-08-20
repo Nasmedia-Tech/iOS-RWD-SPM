@@ -13,16 +13,21 @@ let package = Package(
             name: "NStationOfferwall",
             targets: ["iOS_RWD_SPM"]),
     ],
+    // v2.0+ SDK 내부 Sentry — 소비자(매체)가 명시하지 않아도 전이로 링크 (podspec s.dependency 대응)
+    dependencies: [
+        .package(url: "https://github.com/getsentry/sentry-cocoa", "8.0.0"..<"9.0.0")
+    ],
     targets: [
         .binaryTarget(
             name: "NStationOfferwallBinary",
-            url: "https://github.com/Nasmedia-Tech/iOS-NStationDownload/releases/download/v1.9.27/NStationOfferwall1.9.27.xcframework.zip",
-            checksum: "ec9b2309b7f80b6845348072cb798ec2a8f624faf162081da43cbaa911a48198"
+            url: "https://github.com/Nasmedia-Tech/iOS-NStationDownload/releases/download/v2.0.0-rc.5/NStationOfferwall2.0.0-rc.5.xcframework.zip",
+            checksum: "5d6120f32686cafc20674a02720e875ff39f0cec03ec576827f320eec265aea4"
         ),
         .target(
             name: "iOS_RWD_SPM",
             dependencies: [
-                "NStationOfferwallBinary"
+                "NStationOfferwallBinary",
+                .product(name: "Sentry", package: "sentry-cocoa")
             ],
             path: "Sources/iOS-RWD-SPM"
         )
