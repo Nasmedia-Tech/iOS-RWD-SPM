@@ -20,14 +20,14 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "NStationOfferwallBinary",
-            url: "https://github.com/Nasmedia-Tech/iOS-NStationDownload/releases/download/v2.0.0-rc.6/NStationOfferwall2.0.0-rc.6.xcframework.zip",
-            checksum: "054209fef5ede5079824a30c12343981f74ffd4fd89b195a7da4f0605542873f"
+            url: "https://github.com/Nasmedia-Tech/iOS-NStationDownload/releases/download/v2.0.0-rc.7/NStationOfferwall2.0.0-rc.7.xcframework.zip",
+            checksum: "40de23dfe204616bbcd7b92da8064720526d97be0be8bb6db37314c1d45180f4"
         ),
         .target(
             name: "iOS_RWD_SPM",
             dependencies: [
                 "NStationOfferwallBinary",
-                .product(name: "Sentry", package: "sentry-cocoa")
+                .product(name: "Sentry-Dynamic", package: "sentry-cocoa")
             ],
             path: "Sources/iOS-RWD-SPM"
         )
